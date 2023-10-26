@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form class="form" action="" autocomplete="on" method="get">
+        <p><label for="nome">Nome:</label>
+        <input type="text" class="nome" name="nome" id="nome" autocomplete="name"></p>
+
+        <p><label for="sobrenome">Sobrenome:</label>
+        <input type="text" class="sobrenome" name="sobrenome" id="sobrenome" autocomplete="additional-name"></p>
+
+        <p><label for="altura">Altura:</label>
+        <input type="number" class="altura" name="altura" id="altura"></p>
+
+        <p><label for="peso">Peso:</label>
+        <input type="number" class="peso" name="peso" id="peso"><br></p>
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="resultado">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

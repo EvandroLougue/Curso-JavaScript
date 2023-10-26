@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Exercício JavaScript</h1>
+    <script>
+        const nome = window.prompt('Digite o seu nome completo:');
+        window.document.body.innerHTML += `Olá, <strong>${nome}</strong>! <br>`;
+        window.document.body.innerHTML += `Seu nome tem <strong>${nome.length}</strong> letras. <br>`;
+        window.document.body.innerHTML += `A segunda letra do seu nome é: <strong>${nome[1]}</strong> <br>`;
+        window.document.body.innerHTML += `Qual o primeiro índice da letra A no seu nome? <strong>${nome.indexOf('a')}</strong> <br>`;
+        window.document.body.innerHTML += `Qual o último índice da letra A no seu nome? <strong>${nome.lastIndexOf('a')}</strong> <br>`;
+        window.document.body.innerHTML += `As últimas 3 letras do seu nome completo são: <strong>${nome.slice(-3, nome.length)}</strong> <br>`;
+        window.document.body.innerHTML += `As palavras do seu nome são <strong>${nome.split(' ')}</strong>. <br>`;
+        window.document.body.innerHTML += `Seu nome com letras maiúsculas: <strong>${nome.toUpperCase()}</strong> <br>`;
+        window.document.body.innerHTML += `Seu nome com letras minúsculas: <strong>${nome.toLowerCase()}</strong> <br>`;
+    </script>
+</body>
+</html>
