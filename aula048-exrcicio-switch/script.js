@@ -10,7 +10,6 @@ const ano = data.getFullYear();
 
 const hora = zeroEsq(data.getHours());
 const minuto = zeroEsq(data.getMinutes());
-const segundo = data.getSeconds();
 
 function zeroEsq(num) {
     return num >= 10 ? num : `0${num}`; 
@@ -89,3 +88,22 @@ switch (semana) {
 console.log(mes);
 
 document.querySelector('.container > h1').innerHTML = `Hoje é ${diaSemana}, dia ${diaMes} de ${mes} de ${ano}. Horário: ${hora}:${minuto}`
+/** 
+// MANEIRA MAIS SIMPLES
+
+const h1 = document.querySelector('.container h1');
+h1.innerHTML += data.toLocaleDateString('pt-BR', {dateStyle: 'full'}); 
+
+// SEGUNDA MAIS SIMPLES
+
+function getMes(nmes) {
+    const mesTexto = [' ', 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+    return mesTexto[nmes];
+}
+function getDia(semana) {
+    const diaSem = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
+    return diaSem[semana];
+}
+
+h1.innerHTML += getMes(nmes); 
+h1.innerHTML += getDia(semana);*/
