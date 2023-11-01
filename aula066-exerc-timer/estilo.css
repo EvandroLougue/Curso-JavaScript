@@ -31,3 +31,9 @@ h1 {
 form input:focus {
     outline: 1px solid var(--cor1);
 }
+p.relogio {
+    font-size: 3em;
+}
+.pausado {
+    color: red;
+}
